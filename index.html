@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOLUNTI+EDU - Conectando voluntarios, educación y futuro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f4f8fb;
+color:#333;
+}
+
+header{
+background:#0b5fa5;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+header h1{
+margin:0;
+font-weight:800;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:600;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+.hero{
+background:linear-gradient(135deg,#0b5fa5,#3bb54a);
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+margin:10px;
+border-radius:5px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-primary{
+background:white;
+color:#0b5fa5;
+}
+
+.btn-secondary{
+background:#ffcc00;
+color:#000;
+}
+
+.section{
+padding:70px 20px;
+text-align:center;
+}
+
+.section h3{
+font-size:30px;
+margin-bottom:20px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:280px;
+}
+
+.card h4{
+margin-top:0;
+color:#0b5fa5;
+}
+
+.impact{
+background:#e8f2fb;
+}
+
+footer{
+background:#0b5fa5;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+input, select{
+padding:10px;
+margin:8px;
+width:90%;
+max-width:400px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+form{
+margin-top:20px;
+}
+
+@media(max-width:768px){
+.cards{
+flex-direction:column;
+align-items:center;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>VOLUNTI+EDU</h1>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#voluntariado">Voluntariado</a>
+<a href="#donar">Donar</a>
+<a href="#kits">Kits</a>
+<a href="#impacto">Impacto</a>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+<h2>Conectando voluntarios, educación y futuro</h2>
+<p>Plataforma de voluntariado educativo con impacto medible en primera infancia.</p>
+<a href="#voluntariado" class="btn btn-primary">Quiero ser voluntario</a>
+<a href="#donar" class="btn btn-secondary">Donar ahora</a>
+</section>
+
+<section class="section" id="voluntariado">
+<h3>Registro de Voluntarios</h3>
+<p>Únete al programa estructurado de voluntariado educativo.</p>
+
+<form>
+<input type="text" placeholder="Nombre completo" required><br>
+<input type="email" placeholder="Correo electrónico" required><br>
+<input type="text" placeholder="Ciudad" required><br>
+<select required>
+<option value="">Selecciona tu perfil</option>
+<option>Aprendiz SENA</option>
+<option>Egresado</option>
+<option>Profesional</option>
+</select><br>
+<button class="btn btn-primary">Enviar Solicitud</button>
+</form>
+</section>
+
+<section class="section impact" id="impacto">
+<h3>Impacto en Barranquilla</h3>
+
+<div class="cards">
+<div class="card">
+<h4>Niños beneficiados</h4>
+<p>Meta piloto: 100+</p>
+</div>
+
+<div class="card">
+<h4>Voluntarios activos</h4>
+<p>Meta inicial: 25</p>
+</div>
+
+<div class="card">
+<h4>Sesiones ejecutadas</h4>
+<p>Seguimiento con evidencia</p>
+</div>
+</div>
+
+</section>
+
+<section class="section" id="kits">
+<h3>Kits Didácticos</h3>
+
+<div class="cards">
+
+<div class="card">
+<h4>Kit 0 - 2 años</h4>
+<p>Estimulación sensorial y motricidad básica.</p>
+<a href="#" class="btn btn-primary">Comprar</a>
+</div>
+
+<div class="card">
+<h4>Kit 3 - 4 años</h4>
+<p>Lenguaje, emociones y coordinación.</p>
+<a href="#" class="btn btn-primary">Comprar</a>
+</div>
+
+<div class="card">
+<h4>Kit 5 - 6 años</h4>
+<p>Pensamiento lógico y prelectura.</p>
+<a href="#" class="btn btn-primary">Comprar</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="donar">
+<h3>Haz una Donación</h3>
+<p>Tu aporte fortalece la primera infancia.</p>
+
+<a href="#" class="btn btn-primary">$20.000</a>
+<a href="#" class="btn btn-primary">$50.000</a>
+<a href="#" class="btn btn-primary">$100.000</a>
+<br><br>
+
+<p>Integrar pasarela: Wompi / PayU / MercadoPago</p>
+
+</section>
+
+<footer>
+Barranquilla – Atlántico – Colombia<br>
+Correo: voluntimasedu@gmail.com<br>
+© 2026 VOLUNTI+EDU – Fundación sin ánimo de lucro
+</footer>
+
+</body>
+</html>
